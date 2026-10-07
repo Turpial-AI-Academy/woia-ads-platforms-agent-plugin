@@ -6,7 +6,8 @@ export function metaPort({version,account_id,token,binding_revision,qualificatio
   authorize(c,context,'Ads',c.action==='ads.performance.read');
   guard(qualification==='PASS'&&context.binding_revision===binding_revision,'QUALIFIED_META_BINDING_REQUIRED');
   const p=c.payload;guard(p.meta?.account_id===account_id&&p.meta?.api_version===version,'EXACT_META_BINDING_REQUIRED');
-  let target=p.meta.target_id;guard(/^\d+$/.test(target??''),'META_TARGET_REQUIRED');
+  let target=p.meta.target_id;
+  if(c.action!=='ads.campaign.create')guard(/^\d+$/.test(target??''),'META_TARGET_REQUIRED');
   let fields={},method='POST',edge='';
   if(c.action==='ads.campaign.create'){
    target=account_id;edge='/campaigns';
