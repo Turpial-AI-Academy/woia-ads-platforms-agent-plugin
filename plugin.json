@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "woia-ads-platforms",
+  "version": "0.5.0",
+  "description": "Guard paid campaign, targeting, budget and conversion effects owned by Ads.",
+  "author": {
+    "name": "Turpial AI Academy",
+    "url": "https://github.com/Turpial-AI-Academy"
+  },
+  "homepage": "https://github.com/Turpial-AI-Academy/woia-ads-platforms-agent-plugin",
+  "repository": "https://github.com/Turpial-AI-Academy/woia-ads-platforms-agent-plugin",
+  "license": "MIT",
+  "keywords": ["agent-plugin", "woia-ads-platforms"]
+}
