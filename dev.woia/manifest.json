@@ -1,0 +1,30 @@
+{
+  "schema": "dev.woia.provider-manifest/v1",
+  "authoring_profile": "thin",
+  "origin": "native",
+  "version": "0.5.0",
+  "capability": "woia-ads-platforms",
+  "actions": [
+    "ads.campaign.create",
+    "ads.campaign.update",
+    "ads.campaign.pause",
+    "ads.campaign.resume",
+    "ads.campaign.archive",
+    "ads.targeting.configure",
+    "ads.budget.set",
+    "ads.conversion.configure",
+    "ads.signal.observe",
+    "ads.performance.read",
+    "ads.effect.reconcile"
+  ],
+  "source_contracts": {
+    "repository": "Turpial-AI-Academy/woia-real-estate",
+    "commit": "eb0a7278188b2f9968e21ed4299f08184d864cac",
+    "documents": [
+      "docs/21-capability-provider-map.md",
+      "docs/22-canonical-domain-data-contract.md",
+      "docs/24-authority-finance-final-contract.md",
+      "docs/25-e2e-and-definition-of-done.md"
+    ]
+  }
+}

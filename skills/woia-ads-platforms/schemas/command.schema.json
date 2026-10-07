@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "action",
+    "organization",
+    "scope",
+    "resource_id",
+    "payload",
+    "expected_revision"
+  ],
+  "properties": {
+    "action": {
+      "enum": [
+        "ads.campaign.create",
+        "ads.campaign.update",
+        "ads.campaign.pause",
+        "ads.campaign.resume",
+        "ads.campaign.archive",
+        "ads.targeting.configure",
+        "ads.budget.set",
+        "ads.conversion.configure",
+        "ads.signal.observe",
+        "ads.performance.read",
+        "ads.effect.reconcile"
+      ]
+    },
+    "organization": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resource_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "effect_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "expected_revision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "payload": {
+      "type": "object"
+    }
+  }
+}
