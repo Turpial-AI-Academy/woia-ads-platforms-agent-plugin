@@ -1,5 +1,16 @@
 # woia-ads-platforms
 
+## W1 implementation v0.5.0
+
+Capability-specific actions, exact authority/effect helpers and schemas are in
+`skills/woia-ads-platforms/`. Load that skill's `references/CONTRACT.md` before use.
+The deterministic provider exports `apply`, `initialState` and `projectSucceeded`;
+authority/effect helpers export `dispatchPending` and `digest`.
+Persist JSON state with atomic compare-and-swap before invoking a qualified adapter.
+Remote unknown outcomes require reconciliation; local intents are not successful effects.
+Live private binding/host/provider qualification and Operator E2E are NOT_RUN.
+This candidate is neither published nor admitted and does not claim Production Ready.
+
 Portable Agent Plugin for Guard paid campaign, targeting, budget and conversion effects owned by Ads..
 
 ## Capability
