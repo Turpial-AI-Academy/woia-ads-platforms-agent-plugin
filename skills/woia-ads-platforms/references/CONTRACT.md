@@ -13,7 +13,6 @@ Primary API reference: [Meta Marketing API collection](https://www.postman.com/m
 Official field reference: [Meta ad account](https://developers.facebook.com/docs/marketing-api/reference/ad-account).
 Checked 2026-10-07. Synthetic transport tests do not prove account/API availability.
 
-Authoritative source: Real Estate eb0a7278188b2f9968e21ed4299f08184d864cac ADR-0026/0027/0029/0030 and docs21/22/24/25.
 
 Paid-media campaign and spend effects owned by Ads. No person-directed messaging; human inquiries route through Communications to Customer Service. Meta is the initial intended adapter; real account qualification remains NOT_RUN.
 
