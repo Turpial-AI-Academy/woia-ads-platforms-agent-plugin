@@ -2,7 +2,7 @@
   "schema": "dev.woia.provider-manifest/v1",
   "authoring_profile": "thin",
   "origin": "native",
-  "version": "0.5.6",
+  "version": "0.5.7",
   "capability": "woia-ads-platforms",
   "actions": [
     "ads.campaign.create",
